@@ -24,8 +24,8 @@ namespace MvcOnlineCommercialSoft.Models.Siniflar
         [Column(TypeName = "Varchar")]
         [StringLength(250)]
         public string UrunGorsel { get; set; }
-
-        public Kategori Kategori { get; set; }
+        public int Kategoriid { get; set; }
+        public virtual Kategori Kategori { get; set; }
         public ICollection<SatisHareket> SatisHarekets { get; set; }
 
     }
