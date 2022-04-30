@@ -156,6 +156,8 @@
     <Compile Include="Models\Siniflar\Kategori.cs" />
     <Compile Include="Models\Siniflar\Personel.cs" />
     <Compile Include="Models\Siniflar\SatisHareket.cs" />
+    <Compile Include="Models\Siniflar\SinifGrup.cs" />
+    <Compile Include="Models\Siniflar\SinifGrup2.cs" />
     <Compile Include="Models\Siniflar\Urun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2838,6 +2840,8 @@
     <Content Include="thumber\scss\_site-navbar.scss" />
     <Content Include="Views\Galeri\Index.cshtml" />
     <Content Include="Views\UrunDetay\Index.cshtml" />
+    <Content Include="Views\istatistik\KolayTablolar.cshtml" />
+    <Content Include="Views\istatistik\Partial1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -63,5 +63,30 @@ namespace MvcOnlineCommercialSoft.Controllers
 
             return View();
         }
+
+        public ActionResult KolayTablolar()
+        {
+            var sorgu = from x in c.Carilers
+                        group x by x.CariSehir into g
+                        select new SinifGrup
+                        {
+                            Sehir = g.Key,
+                            Sayi = g.Count()
+                        };
+
+            return View(sorgu.ToList());
+        }
+
+        public PartialViewResult Partial1()
+        {
+            var sorgu2 = from x in c.Perosnels
+                         group x by x.Departmanid into g
+                         select new SinifGrup2
+                         {
+                             Departman = g.Key,
+                             Sayi = g.Count()
+                         };
+            return PartialView(sorgu2.ToList());
+        }
     }
 }
