@@ -138,6 +138,7 @@
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
     <Compile Include="Controllers\SatisController.cs" />
+    <Compile Include="Controllers\TodoController.cs" />
     <Compile Include="Controllers\UrunController.cs" />
     <Compile Include="Controllers\UrunDetayController.cs" />
     <Compile Include="Global.asax.cs">
@@ -158,6 +159,8 @@
     <Compile Include="Models\Siniflar\SatisHareket.cs" />
     <Compile Include="Models\Siniflar\SinifGrup.cs" />
     <Compile Include="Models\Siniflar\SinifGrup2.cs" />
+    <Compile Include="Models\Siniflar\SinifGrup3.cs" />
+    <Compile Include="Models\Siniflar\Todo.cs" />
     <Compile Include="Models\Siniflar\Urun.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2842,6 +2845,11 @@
     <Content Include="Views\UrunDetay\Index.cshtml" />
     <Content Include="Views\istatistik\KolayTablolar.cshtml" />
     <Content Include="Views\istatistik\Partial1.cshtml" />
+    <Content Include="Views\istatistik\Partial2.cshtml" />
+    <Content Include="Views\istatistik\Partial3.cshtml" />
+    <Content Include="Views\istatistik\Partial4.cshtml" />
+    <Content Include="Views\Personel\PersonelList.cshtml" />
+    <Content Include="Views\Todo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

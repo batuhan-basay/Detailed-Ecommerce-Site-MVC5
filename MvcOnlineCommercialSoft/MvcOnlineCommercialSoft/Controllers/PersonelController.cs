@@ -58,5 +58,11 @@ namespace MvcOnlineCommercialSoft.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult PersonelList()
+        {
+            var sorgu = c.Perosnels.ToList();
+            return View(sorgu);
+        }
     }
 }

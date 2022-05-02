@@ -20,13 +20,15 @@
     {
 <tr>
     <td>@k.Personelid</td>
+    <td>
+        <img src="@k.PersonelGorsel" style="width:50px; height:50px;" />
+    </td>
     <td>@k.PersonelAd</td>
     <td>@k.PersonelSoyad</td>
-    <td>@k.PersonelGorsel</td>
     <td>@k.Departman.DepartmanAd</td>
     <td><a href="/Personel/PersonelGetir/@k.Personelid" class="btn btn-warning">Güncelle</a></td>
     <td><a href="/Departman/DepartmanPersonelSatis/@k.Personelid" class="btn btn-success">Satışlar</a></td>
-  
+
 </tr>
     }
 </table>
