@@ -13,19 +13,15 @@
 </ol>
 <table class="table table-bordered">
     <tr>
-        <th>Personel ID</th>
         <th>Ad</th>
         <th>Soyad</th>
-        <th>Gorsel</th>
         <th>Satışlar</th>
     </tr>
     @foreach (var x in Model)
     {
         <tr>
-            <td>@x.Personelid</td>
             <td>@x.PersonelAd</td>
             <td>@x.PersonelSoyad</td>
-            <td>@x.PersonelGorsel</td>
             <td> <a href="/Departman/DepartmanPersonelSatis/@x.Personelid" class="btn btn-info">Satışlar</a></td>
         </tr>
     }

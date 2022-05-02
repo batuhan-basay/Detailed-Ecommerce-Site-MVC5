@@ -81,3 +81,7 @@ C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercial
 C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\obj\Debug\MvcOnlineCommercialSoft.csproj.CopyComplete
 C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\obj\Debug\MvcOnlineCommercialSoft.dll
 C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\obj\Debug\MvcOnlineCommercialSoft.pdb
+C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\bin\PagedList.dll
+C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\bin\PagedList.Mvc.dll
+C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\bin\PagedList.xml
+C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\bin\PagedList.Mvc.xml

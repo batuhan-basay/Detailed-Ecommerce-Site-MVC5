@@ -8,33 +8,27 @@
 
 <table class="table table-bordered" style="margin-top:30px">
     <tr>
-        <th>ID</th>
-        <th>Seri No</th>
-        <th>Sıra No</th>
-        <th>Vergi Dairesi</th>
+        <th>Seri No ve Sıra No</th>
         <th>Tarih</th>
         <th>Saat</th>
-        <th>Teslim Eden</th>
-        <th>Teslim Alan</th>
         <th>Toplam</th>
         <th>Güncelle</th>
         <th>Detaylar</th>
+        <th>Pop Liste</th>
+        <th>Yeni Kalem</th>
 
     </tr>
     @foreach (var k in Model)
     {
     <tr>
-        <td>@k.Faturaid</td>
-        <td>@k.FaturaSeriNo</td>
-        <td>@k.FaturaSıraNo</td>
-        <td>@k.VergiDairesi</td>
+        <td>@k.FaturaSeriNo @k.FaturaSıraNo</td>
         <td>@k.Tarih.ToShortDateString()</td>
         <td>@k.Saat</td>
-        <td>@k.TeslimEden</td>
-        <td>@k.TeslimAlan</td>
-        <td>@k.Toplam</td>
+        <td>@k.Toplam ₺</td>
         <td><a href="/Fatura/FaturaGetir/@k.Faturaid" class="btn btn-success">Güncelle</a></td>
         <td><a href="/Fatura/FaturaDetay/@k.Faturaid" class="btn btn-primary">Detaylar</a></td>
+        <td><a href="/Fatura/FaturaDetay/@k.Faturaid" class="btn btn-danger">Popup Liste</a></td>
+        <td><a href="/Fatura/FaturaDetay/@k.Faturaid" class="btn btn-secondary">Yeni Kalem</a></td>
     </tr>
     }
 </table>

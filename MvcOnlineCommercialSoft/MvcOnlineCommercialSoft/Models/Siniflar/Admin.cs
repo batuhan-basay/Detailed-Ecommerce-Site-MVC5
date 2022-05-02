@@ -18,7 +18,7 @@ namespace MvcOnlineCommercialSoft.Models.Siniflar
         [StringLength(30)]
         public string Sifre { get; set; }
         [Column(TypeName = "Char")]
-        [StringLength(1)]
+        [StringLength(1)]   
         public string Yetki { get; set; }
     }
 }
