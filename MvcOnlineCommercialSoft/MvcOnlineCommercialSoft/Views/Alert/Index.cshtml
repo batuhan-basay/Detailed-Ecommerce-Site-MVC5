@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<br />
+<h2>Alert kısa yolları</h2>
+
+<br />
+<button class="btn btn-success" id="add">Eklendi!</button>
+<button class="btn btn-danger" id="dlt">Silindi!</button>
+<button class="btn btn-info" id="upd">Güncellendi!</button>
+<button class="btn btn-default" style="background-color: #833471; color:white;" id="msg">Mesaj</button>
+<button class="btn btn-default" style="background-color: #ff793f; color: white;" id="msg2">Mesaj2</button>
+
+<script>
+    $('#add').click(function () {
+        swal("Eklendi!");
+    });
+</script>
+
+<script>
+    $('#dlt').click(function () {
+        swal("Silindi!", "Pencereyi Kapat!");
+    });
+</script>
+
+<script>
+    $('#upd').click(function () {
+        swal("Başarılı!", "Güncellendi", "success");
+    });
+</script>
+
+
+<script>
+    $('#msg').click(function () {
+        swal("Düğme dışında yere tıklayın.")
+            .then((value) => {
+                swal(`Değeriniz: ${value}`);
+            });
+    });
+</script>
+
+<script>
+
+    $('#msg2').click(function () {
+        swal({
+            title: "Emin misin?",
+            text: "Bir kez silindiğinde, bu hayali kurtaramayacaksınız.!",
+            icon: "Alarm",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Dosya silindi!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("Dosyanız güvende!");
+                }
+            });
+    });
+</script>

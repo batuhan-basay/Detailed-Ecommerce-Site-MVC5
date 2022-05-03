@@ -80,5 +80,33 @@ namespace MvcOnlineCommercialSoft.Controllers
             var degerler = c.Uruns.ToList();
             return View(degerler);
         }
+
+        [HttpGet]
+        public ActionResult SatisYap(int id)
+        {
+
+            List<SelectListItem> values1 = (from x in c.Perosnels.ToList()
+                                            select new SelectListItem
+                                            {
+                                                Text = x.PersonelAd + " " + x.PersonelSoyad,
+                                                Value = x.Personelid.ToString()
+                                            }).ToList();
+
+
+            ViewBag.vl1 = values1;
+            var values2 = c.Uruns.Find(id);
+            ViewBag.vl2 = values2.Urunid;
+            ViewBag.vl3 = values2.SatisFiyat;
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SatisYap(SatisHareket s)
+        {
+            s.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+            c.SatisHarekets.Add(s);
+            c.SaveChanges();
+            return RedirectToAction("Index", "Satis");
+        }
     }
 }

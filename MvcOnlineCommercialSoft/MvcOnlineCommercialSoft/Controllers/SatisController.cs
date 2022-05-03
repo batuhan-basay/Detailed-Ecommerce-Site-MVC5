@@ -91,7 +91,6 @@ namespace MvcOnlineCommercialSoft.Controllers
             deger.Urunid = p.Urunid;
             c.SaveChanges();
             return RedirectToAction("Index");
-
         }
 
         public ActionResult SatisDetay(int id) 
