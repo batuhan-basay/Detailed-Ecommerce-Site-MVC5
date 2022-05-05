@@ -19,6 +19,8 @@ namespace MvcOnlineCommercialSoft.Models.Siniflar
         public DbSet<Urun> Uruns{ get; set; }
         public DbSet<Detay> Detays{ get; set; }
         public DbSet<Todo> Todos { get; set; }
+        public DbSet<KargoDetay> KargoDetays { get; set; }
+        public DbSet<KargoTakip> KargoTakips { get; set; }
 
 
     }
