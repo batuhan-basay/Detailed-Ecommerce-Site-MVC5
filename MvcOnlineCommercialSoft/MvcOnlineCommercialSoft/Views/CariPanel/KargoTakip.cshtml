@@ -1,12 +1,12 @@
 ﻿@using MvcOnlineCommercialSoft.Models.Siniflar;
 @model List<KargoDetay>
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    ViewBag.Title = "KargoTakip";
+    Layout = "~/Views/Shared/_CariLayout.cshtml";
 }
 
 <br />
-@using (Html.BeginForm("Index", "Kargo", FormMethod.Get))
+@using (Html.BeginForm("KargoTakip", "CariPanel", FormMethod.Get))
 {
     <p>
         Kargo Takip No: @Html.TextBox("p")
@@ -32,9 +32,11 @@
             <td>@kargo.Alici</td>
             <td>@kargo.TakipKodu</td>
             <td>@kargo.Tarih.ToString("dd/MM/yyyy")</td>
-            <td><a href="/Kargo/KargoTakip/@kargo.TakipKodu" class="btn btn-danger">Detaylar</a></td>
+            <td><a href="/CariPanel/CariKargoTakip/@kargo.TakipKodu" class="btn btn-danger">Detaylar</a></td>
 
         </tr>
     }
 
 </table>
+
+<a href="/Kargo/KargoEkle" class="btn btn-success"><b>Yeni Kargo Ekle</b></a>
