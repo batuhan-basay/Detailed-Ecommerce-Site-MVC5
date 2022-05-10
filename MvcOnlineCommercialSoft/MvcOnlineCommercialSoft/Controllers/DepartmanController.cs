@@ -7,6 +7,7 @@ using MvcOnlineCommercialSoft.Models.Siniflar;
 
 namespace MvcOnlineCommercialSoft.Controllers
 {
+    [Authorize]
     public class DepartmanController : Controller
     {
         Context c = new Context();

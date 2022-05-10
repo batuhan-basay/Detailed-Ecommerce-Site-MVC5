@@ -54,5 +54,27 @@ namespace MvcOnlineCommercialSoft.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult Cascading()
+        {
+            Cascading cs = new Cascading();
+            cs.Kategoriler = new SelectList(c.Kategoris, "KategoriID", "KategoriAd");
+            cs.Ürünler = new SelectList(c.Uruns, "Urunid", "UrunAd");
+            return View(cs);
+        }
+
+        public JsonResult UrunGetir(int p)
+        {
+            var urunlistesi = (from x in c.Uruns
+                               join y in c.Kategoris
+                               on x.Kategori.KategoriID equals y.KategoriID
+                               where x.Kategori.KategoriID == p
+                               select new { 
+                                Text = x.UrunAd,
+                                Value = x.Urunid.ToString()
+                               }).ToList();
+
+            return Json(urunlistesi, JsonRequestBehavior.AllowGet);
+        }
     }
 }
