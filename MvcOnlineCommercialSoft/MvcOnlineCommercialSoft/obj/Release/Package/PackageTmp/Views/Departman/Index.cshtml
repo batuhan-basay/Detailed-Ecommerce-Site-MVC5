@@ -1,0 +1,29 @@
+﻿@using MvcOnlineCommercialSoft.Models.Siniflar
+@model List<Departman>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered" style="margin-top:30px">
+    <tr>
+        <th>ID</th>
+        <th>Departman Adı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Detay</th>
+    </tr>
+    @foreach (var k in Model)
+    {
+<tr>
+    <td>@k.Departmanid</td>
+    <td>@k.DepartmanAd</td>
+    <td><a href="/Departman/DepartmanSil/@k.Departmanid" class="btn btn-danger">Sil</a></td>
+    <td><a href="/Departman/DepartmanGetir/@k.Departmanid" class="btn btn-success">Güncelle</a></td>
+    <td><a href="/Departman/DepartmanDetay/@k.Departmanid" class="btn btn-primary">Detaylar</a></td>
+</tr>
+    }
+</table>
+<td><a href="/Departman/DepartmanEkle" class="btn btn-info">Departman Ekle</a></td>
+
+

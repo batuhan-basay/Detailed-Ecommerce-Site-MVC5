@@ -1,0 +1,40 @@
+﻿@using MvcOnlineCommercialSoft.Models.Siniflar;
+@model List<KargoDetay>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+@using (Html.BeginForm("Index", "Kargo", FormMethod.Get))
+{
+    <p>
+        Kargo Takip No: @Html.TextBox("p")
+        <input type="submit" value="Ara" style="background-color: #00a8ff;" />
+    </p>
+}
+
+<table class="table table-bordered" style="margin-top:20px">
+    <tr>
+
+        <th>Personel</th>
+        <th>Alıcı</th>
+        <th>Takip Kodu</th>
+        <th>Tarih</th>
+        <th>Detaylar</th>
+    </tr>
+
+
+    @foreach (var kargo in Model)
+    {
+        <tr>
+            <td>@kargo.Personel</td>
+            <td>@kargo.Alici</td>
+            <td>@kargo.TakipKodu</td>
+            <td>@kargo.Tarih.ToString("dd/MM/yyyy")</td>
+            <td><a href="/Kargo/KargoTakip/@kargo.TakipKodu" class="btn btn-danger">Detaylar</a></td>
+
+        </tr>
+    }
+
+</table>
