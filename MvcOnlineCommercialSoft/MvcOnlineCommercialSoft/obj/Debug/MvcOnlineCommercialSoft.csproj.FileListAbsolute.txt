@@ -87,4 +87,3 @@ C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercial
 C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\bin\PagedList.Mvc.xml
 C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\obj\Debug\MvcOnlineCommercialSoft.Migrations.kargotest.resources
 C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\obj\Debug\MvcOnlineCommercialSoft.csproj.GenerateResource.cache
-C:\Users\batuh\Documents\GitHub\Detailed-Ecommerce-Site-MVC5\MvcOnlineCommercialSoft\MvcOnlineCommercialSoft\bin\QRCoder.dll
